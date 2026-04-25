@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Habit Tracker</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Habit & Study Tracker</h1>
+        </header>
+
+        <main>
+                        <section class="calendar-section">
+                <div class="calendar-header">
+                    <h2 id="month-year">🗓️ Calendar Progress</h2>
+                </div>
+                <div id="calendar-grid" class="calendar-grid">
+                    </div>
+            </section>
+
+                        <section class="habits-section">
+                <h2>📝 Today's Habits</h2>
+
+                <div class="add-habit-form">
+                    <input type="text" id="new-habit-input" placeholder="Enter a new habit...">
+                    <select id="new-habit-category">
+                        <option value="Daily Habits">Daily Habits</option>
+                        <option value="Study Routine">Study Routine</option>
+                    </select>
+                    <button onclick="addHabit()" class="add-btn">Add</button>
+                </div>
+
+                <div class="habit-groups">
+                    <h3>☀️ Daily Habits</h3>
+                    <div id="daily-habits-list" class="habits-list"></div>
+                    <br>
+                    <h3>📚 Study Routine</h3>
+                    <div id="study-habits-list" class="habits-list"></div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
